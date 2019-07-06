@@ -1,0 +1,187 @@
+.header{
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  &__inner{
+    margin-left: 10px;
+    width: 170px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+      font-size: 50px;
+      margin-left: 20px;
+      color: #f01111;
+    }
+  }
+}
+.box{
+  position: relative;
+  z-index: 1001;
+  background-image: url('https://cdn.pixabay.com/photo/2015/07/21/14/08/textile-853970_1280.jpg');
+  height: 300px;
+  border-top: solid 6px #050505;
+  border-bottom: solid 6px #050505;
+    
+    .box-top{
+      width: 100%;
+      height: auto;
+      font-size: 180px;
+      font-weight: bold;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform : translate(-50%,-50%);
+      transform : translate(-50%,-50%);
+      display: inline-block;
+      color: #fff;
+      letter-spacing: .05em;
+      text-shadow: 0 20px 30px rgb(21, 22, 22), 0 0 12px rgb(14, 15, 15), 2px 5px 60px #333333;
+    }
+}
+.main{
+  background-color: #008080;
+  .main-contents{
+    width: 100%;
+    height: 1900px;
+    &__top{
+      width: 100%;
+      height: 600px;
+      display: flex;
+      flex-wrap: wrap;
+      .book-box{
+        width: 300px;
+        height: 400px;
+        margin: 40px auto;
+        &__inner{
+          width: 100%;
+          height: 100%;
+          padding: 0 8px 16px;
+          .book-image{
+            img{
+              width: 300px;
+              height: 400px;
+              border-radius: 10px;
+              transition: 0.5s;
+            }
+            img:hover {
+              -moz-transform: scale(1.1,1.1);
+              -webkit-transform: scale(1.1,1.1);
+              -o-transform: scale(1.1,1.1);
+              -ms-transform: scale(1.1,1.1);
+            }
+          }
+          .book-title{
+            width: 250px;
+            height: 90px;
+            text-align: center;
+            margin: 30px auto;
+            h3{
+              font-size: 30px;
+              font-weight: bold;
+              color: rgb(36, 7, 204);
+              text-shadow: 0 0 10px rgb(223, 238, 21), 0 0 20px rgb(242, 246, 11), 0 0 30px #dcf30e;
+            }
+          }
+        }
+      }
+    }
+    &__center{
+      .center-box{
+        width: 100%;
+        height: 750px;
+        margin-top: 30px;
+        &__left{
+          height: 600px;
+          width: 600px;
+          float: left;
+          
+          .left-image{
+            margin: 0 50px;
+            position: relative;
+            img{
+              height: 600px;
+              width: 500px;
+              border-radius: 10px;
+              transition: 0.5s;
+            }
+            img:hover {
+              transform: scale(1.2) rotate(9deg);
+              transition-duration: 0.5s;
+
+            }
+            .left-title{
+              color: #fff;
+              position: absolute;
+              font-size: 50px;
+              font-weight: bold;
+              bottom: 10px;
+              left: 150px;
+              text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f01111;
+            }
+          }
+        }
+        .book-box-cover{
+          width: 345px;
+          float: left;
+          margin-right: 60px;
+          .book-image{
+            img{
+              height: 450px;
+              width: 345px;
+              border-radius: 10px;
+              transition: 0.5s;
+            }
+            img:hover {
+              -moz-transform: scale(1.1,1.1);
+              -webkit-transform: scale(1.1,1.1);
+              -o-transform: scale(1.1,1.1);
+              -ms-transform: scale(1.1,1.1);
+            }
+          }
+          .book-title{
+            width: 250px;
+            height: 90px;
+            text-align: center;
+            margin: 60px auto;
+            h3{
+              font-size: 40px;
+              font-weight: bold;
+              color: white;
+              text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px  #f01111;
+            }
+          }
+        }
+      }
+    }
+    &__bottom{
+      width: 100%;
+      height: 460px;
+      .slider{
+        margin: 50px 30px;
+        width: 100%;
+    }
+    .slider img{
+        height: 400px;
+        width: 300px;
+        border-radius: 10px;
+
+    }
+    /*slick setting*/
+    .slick-prev:before,
+    .slick-next:before {
+        display: none;
+    }
+    button{
+      display: none;
+    }
+    }
+  }
+}
+.footer{
+  width: 100%;
+  height: 300px;
+  background-image: url('https://cdn.pixabay.com/photo/2016/12/07/18/37/old-man-1890178_1280.png')
+}

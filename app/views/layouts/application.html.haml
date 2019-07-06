@@ -1,0 +1,25 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %script{src: "./js/jquery-3.4.1.js"}/
+    %script{src: "./js/jquery-3.4.1.custom.min.js"}/
+    %script{src: "./js/main.js"}
+    %link{href: "https://use.fontawesome.com/releases/v5.6.1/css/all.css", rel: "stylesheet"}/
+    %link{:href => "animate.css", :rel => "stylesheet"}
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{:src => "jquery.textillate.js"}
+    %script{:src => "jquery.lettering.js"}
+    %link{:href => "stylesheets/slick-theme.scss", :rel => "stylesheet", :type => "text/scss"}/
+    %link{:href => "stylesheets/slick.scss", :rel => "stylesheet", :type => "text/scss"}/
+    %script{:src => "https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"}
+    %script{:src => "js/slick.min.js", :type => "text/javascript"}
+
+
+    %title StockControlSystem
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    = yield
