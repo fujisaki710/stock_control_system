@@ -17,7 +17,7 @@ $(function(){
     outEffects: [ 'rotateOut' ],	// エフェクト終了時のアニメーション設定
   
     in: {
-      effect: 'bounceInRight',	// エフェクトの指定
+      effect: 'bounceInDown',	// エフェクトの指定
       delayScale: 2,	// 遅延時間の指数
       delay: 50,	// 文字ごとの遅延時間
       sync: false,	// アニメーションをすべての文字に同時に適用
